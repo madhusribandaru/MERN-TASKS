@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task6css</title>
+    <style>
+      .outerdiv {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        padding-top: 50px;
+        margin-left: 130px;
+      }
+      #input1 {
+        width: 510px;
+        height: 30px;
+        background-color: green;
+        border: 1px solid green;
+        color: white;
+      }
+      #label1 {
+        font-weight: bold;
+      }
+      #name,
+      #pwd {
+        width: 500px;
+        height: 30px;
+      }
+      table,
+      tr,
+      td {
+        padding: 10px;
+      }
+      a {
+        text-align: end;
+      }
+      #b1 {
+        background-color: red;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        color: white;
+        border: 1px solid red;
+        margin-top: 20px;
+      }
+      .innerdiv {
+        background-color: lightgray;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outerdiv">
+      <table>
+        <tr>
+          <td>
+            <img src="./image1.png" alt="error" />
+          </td>
+        </tr>
+        <tr>
+          <form action="">
+            <tr>
+              <td>
+                <label for="name" id="label1">Username</label> <br />
+
+                <input type="text" id="name" placeholder="Enter Username" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pwd" id="label1">Password</label> <br />
+
+                <input type="password" id="pwd" placeholder="Enter Password" />
+              </td>
+            </tr>
+            <tr>
+              <td><input type="submit" value="Login" id="input1" /></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" id="me" />
+                <label for="me">Remember me</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="innerdiv">
+                  <input type="button" value="cancel" id="b1" />
+                  <p>Forget <a href="">password</a></p>
+                </div>
+              </td>
+            </tr>
+          </form>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

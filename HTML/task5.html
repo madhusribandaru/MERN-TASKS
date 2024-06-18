@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task5</title>
+    <style>
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+      table,tr,td{
+        margin-left: 400px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 50%;
+      }
+      #form2{
+         text-align: center;
+         margin-top: 20px;
+      }
+      #register{
+        width: 100px;
+      }
+      #link{
+        text-align: end;
+      }
+      #lb1{
+        font-weight: bold;
+      }
+      input{
+        width: 500px;
+      } 
+      #check{
+          width: 15px;
+      }
+      #address{
+        height: 70px;
+      }
+      #lang{
+        width: 15px;
+      }  
+      #gender{
+        width: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration form</h1>
+    <table>
+      <form action="" id="form1">
+        <tr>
+          <td><label for="name" id="lb1">First Name</label></td>
+          <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="name1" id="lb1">Last Name</label></td>
+          <td><input type="text" id="name1" /></td>
+        </tr>
+        <tr>
+          <td><label for="email" id="lb1">Email</label></td>
+          <td><input type="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td><label for="pwd" id="lb1">Password</label></td>
+          <td><input type="password" id="pwd" /></td>
+        </tr>
+        <tr>
+          <td><label for="re-pwd" id="lb1">Re-enter Password</label></td>
+          <td><input type="password" id="re-pwd" /></td>
+        </tr>
+        <tr>
+          <td><label for="gender" id="lb1">Gender</label></td>
+          <td>
+            <input type="radio" value="male" name="gender" id="gender" />
+            <label for="">Male</label><br><hr>
+            <input type="radio" value="female" name="gender" id="gender" />
+            <label for="">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="age" id="lb1">Age:</label></td>
+          <td><input type="text" id="age" /></td>
+        </tr>
+        <tr>
+          <td><label for="ph-no" id="lb1">Phone Number</label></td>
+          <td><input type="text" id="ph-no" /></td>
+        </tr>
+        <tr>
+          <td><label for="address" id="lb1">address</label></td>
+          <td><input type="text" id="address" /></td>
+        </tr>
+        <tr>
+          <td><label for="state" id="lb1">State</label></td>
+          <td><input type="text" id="state" /></td>
+        </tr>
+        <tr>
+          <td><label for="country" id="lb1">Country</label></td>
+          <td>
+            <select name="" id="country">
+              <option value="">Choose your country</option>
+              <option value="">India</option>
+              <option value="">America</option>
+              <option value="">Sri Lanka</option>
+              <option value="">other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="lang" id="lb1">Languages known</label></td>
+          <td>
+            <input type="checkbox" id="lang" />
+            <label for="">English</label>
+          
+            <input type="checkbox" id="lang" />
+            <label for="">Kannada</label>
+          
+            <input type="checkbox" id="lang" />
+            <label for="">Hindi</label>
+          
+            <input type="checkbox" id="lang" />
+            <label for="">Telugu</label></td>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="checkbox" id="check">
+          <label for="check">Hereby I declare all the given details are true</label></td>
+        </tr>
+        <tr>
+          <td colspan="2" id="link">
+            <label for="">Log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a> website</label>
+          </td>
+        </tr>
+      </form>
+    </table>
+    <form action="" id="form2">
+      <input type="submit" id="register" value="Register">
+    </form>
+  </body>
+</html>
