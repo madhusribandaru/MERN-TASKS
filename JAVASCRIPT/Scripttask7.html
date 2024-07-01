@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("./images./track.png");
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">
+      <h1>Click the buttons to move the train</h1>
+      <input type="button" value="start" onclick="start()" />
+      <input type="button" value="stop" onclick="stop()" />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <img src="./images/train.png" alt="error" id="mytrain" />
+
+      <script>
+        var animation;
+        function init() {
+          let mytrain = document.getElementById("mytrain");
+          mytrain.style.position = "absolute";
+          mytrain.style.left = "0px";
+        }
+        window.onload = init;
+
+        function start() {
+          let mytrain = document.getElementById("mytrain");
+          mytrain.style.left = parseInt(mytrain.style.left) + 10 + "px";
+          animation = setTimeout(start, 50);
+        }
+        function stop() {
+          let mytrain = document.getElementById("mytrain");
+          clearTimeout(animation);
+          mytrain.style.left = "paused";
+        }
+      </script>
+    </div>
+  </body>
+</html>

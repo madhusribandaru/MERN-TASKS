@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>String in Alphabetical order</h1>
+    <label for="mylabel">Enter a string </label>
+    <input type="text" id="mylabel" />
+    <button id="mySub">Submit</button>
+    <h1 id="firsth1"></h1>
+    <script>
+      function getSortedStr() {
+        let element;
+        element = document.getElementById("mylabel").value;
+        let sorted = element.split("").sort().join("");
+
+        document.getElementById(
+          "firsth1"
+        ).innerHTML = Sorted string is ${sorted};
+      }
+      document.getElementById("mySub").onclick = function () {
+        getSortedStr();
+      };
+    </script>
+  </body>
+</html>

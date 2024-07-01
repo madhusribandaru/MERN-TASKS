@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Reversing a number</h1>
+    <label for="mylabel">Enter a number</label>
+    <input type="text" id="mylabel" />
+    <button id="submitbtn">Submit</button>
+    <h1 id="secondh1"></h1>
+    <script>
+      function print() {
+        let rev = 0;
+        let Example = Number(document.getElementById("mylabel").value);
+
+        while (Example > 0) {
+          rev = rev * 10 + (Example % 10);
+          Example = parseInt(Example / 10);
+        }
+
+        document.getElementById(
+          "secondh1"
+        ).innerHTML = Reverse of entered number is ${rev};
+      }
+      document.getElementById("submitbtn").onclick = function () {
+        print();
+      };
+    </script>
+  </body>
+</html>
